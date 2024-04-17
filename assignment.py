@@ -42,7 +42,7 @@ conn = sqlite3.connect('Data Engineer_ETL Assignment.db')
 df = pd.read_sql_query(sql_query, conn)
 
 # Write DataFrame to CSV file
-df.to_csv('output_pandas.csv')
+df.to_csv('output_pandas.csv',index=False)
 
 # Close database connection
 conn.close()
